@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Zeus Demo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="slot-machine">
+        <h1>Slot Zeus</h1>
+        <div class="balance-controls">
+            <p>Saldo: <span id="balance">1000000</span></p>
+            <button onclick="deposit()">Isi Saldo</button>
+            <button onclick="withdraw()">Tarik Saldo</button>
+        </div>
+        <div class="reels" id="reels">
+            <!-- 5 reels x 3 rows -->
+        </div>
+        <div class="controls">
+            <label for="bet">Taruhan:</label>
+            <input type="number" id="bet" value="400" min="400" max="200000">
+            <button onclick="spin()">Spin</button>
+            <button onclick="buySpin()">Buy Spin (Scatter)</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="assets/js/slot.js"></script>
+</body>
+</html>
